@@ -12,8 +12,8 @@ function Banner() {
   const [text, setText] = useState("");
   const [delta, setDelta] = useState(100);
   const [index, setIndex] = useState(1);
-  const toRotate = ["Web Developer...", "In Progress", "...And A Gamer"];
-  const period = 75;
+  const toRotate = ["Web Developer...", "...In Progress", "And A Gamer"];
+  const period = 200;
 
   useEffect(() => {
     let ticker = setInterval(() => {
@@ -35,13 +35,13 @@ function Banner() {
     setText(updatedText);
 
     if (isDeleting) {
-      setDelta(50);
+      setDelta(75);
     }
 
     if (!isDeleting && updatedText === fullText) {
       setIsDeleting(true);
       setIndex((prevIndex) => prevIndex - 1);
-      setDelta(2000);
+      setDelta(3000);
     } else if (isDeleting && updatedText === "") {
       setIsDeleting(false);
       setLoopNum(loopNum + 1);
@@ -70,7 +70,7 @@ function Banner() {
                     <span className="txt-rotate">
                       <div className="wrap">
                         {text}
-                        <span className="cursor">|</span>
+                        <span className={isDeleting ? "cursor" : "cursor"} >|</span>
                       </div>
                     </span>
                   </h1>

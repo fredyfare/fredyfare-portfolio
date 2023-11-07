@@ -1,47 +1,12 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import TrackVisibility from "react-on-screen";
 import ProjectCard from "./ProjectCard";
-import projImg1 from "../../assets/images/project-img1.png";
-import projImg2 from "../../assets/images/project-img2.png";
-import projImg3 from "../../assets/images/project-img3.png";
+import professionalExperience from "../../utils/professionalExperience";
 import colorSharp2 from "../../assets/images/color-sharp2.png";
 import "animate.css";
 import "../../styles/Projects.css";
 
 function Projects() {
-  const projects = [
-    {
-      title: "marinero.mx",
-      description: "Mobile Development",
-      imgUrl: projImg1,
-    },
-    // {
-    //   title: "Business Startup",
-    //   description: "Design & Development",
-    //   imgUrl: projImg2,
-    // },
-    // {
-    //   title: "Business Startup",
-    //   description: "Design & Development",
-    //   imgUrl: projImg3,
-    // },
-    // {
-    //   title: "Business Startup",
-    //   description: "Design & Development",
-    //   imgUrl: projImg1,
-    // },
-    // {
-    //   title: "Business Startup",
-    //   description: "Design & Development",
-    //   imgUrl: projImg2,
-    // },
-    // {
-    //   title: "Business Startup",
-    //   description: "Design & Development",
-    //   imgUrl: projImg3,
-    // },
-  ];
-
   return (
     <section className="project" id="projects">
       <Container>
@@ -58,8 +23,8 @@ function Projects() {
                   <p>
                     I've worked with JS frameworks/libraries, learning about web
                     development with React, API consumption, databases, and
-                    other skills. I am currently working on a mobile app for quotes
-                    called
+                    other skills. I am currently working on a mobile app for
+                    quotes called
                     <strong>
                       <em> WisdomQuill</em>
                     </strong>
@@ -71,8 +36,10 @@ function Projects() {
                       className="nav-pills mb-5 justify-content-center align-items-center"
                       id="pills-tab"
                     >
-                      <Nav.Item>  
-                        <Nav.Link eventKey="first">Professional Experience</Nav.Link>
+                      <Nav.Item>
+                        <Nav.Link eventKey="first">
+                          Professional Experience
+                        </Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
                         <Nav.Link eventKey="second">Projects</Nav.Link>
@@ -89,7 +56,7 @@ function Projects() {
                     >
                       <Tab.Pane eventKey="first">
                         <Row>
-                          {projects.map((project, index) => {
+                          {professionalExperience.map((project, index) => {
                             return <ProjectCard key={index} {...project} />;
                           })}
                         </Row>
