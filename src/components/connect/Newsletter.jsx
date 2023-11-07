@@ -29,7 +29,7 @@ function Newsletter({ status, message, onValidated }) {
         <Row>
           <Col lg={12} md={6} xl={5}>
             <h3>
-              Subscribe to our Newsletter<br></br> & Never miss latest updates
+              Subscribe to my Newsletter<br></br> & Never miss latest updates
             </h3>
             {status === "sending" && <Alert>Sending...</Alert>}
             {status === "error" && <Alert variant="danger">{message}</Alert>}
