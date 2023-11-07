@@ -13,7 +13,7 @@ function Banner() {
   const [delta, setDelta] = useState(100);
   const [index, setIndex] = useState(1);
   const toRotate = ["Web Developer", "Web Designer", "UI/UX Designer"];
-  const period = 100;
+  const period = 75;
 
   useEffect(() => {
     let ticker = setInterval(() => {
@@ -35,18 +35,18 @@ function Banner() {
     setText(updatedText);
 
     if (isDeleting) {
-      setDelta(100);
+      setDelta(50);
     }
 
     if (!isDeleting && updatedText === fullText) {
       setIsDeleting(true);
       setIndex((prevIndex) => prevIndex - 1);
-      setDelta(period);
+      setDelta(3000);
     } else if (isDeleting && updatedText === "") {
       setIsDeleting(false);
       setLoopNum(loopNum + 1);
       setIndex(1);
-      setDelta(200);
+      setDelta(period);
     } else {
       setIndex((prevIndex) => prevIndex + 1);
     }
