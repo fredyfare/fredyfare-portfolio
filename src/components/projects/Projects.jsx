@@ -2,6 +2,8 @@ import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import TrackVisibility from "react-on-screen";
 import ProjectCard from "./ProjectCard";
 import professionalExperience from "../../utils/professionalExperience";
+import projects from "../../utils/projects";
+import coursework from "../../utils/coursework";
 import colorSharp2 from "../../assets/images/color-sharp2.png";
 import "animate.css";
 import "../../styles/Projects.css";
@@ -23,8 +25,8 @@ function Projects() {
                   <p>
                     I've worked with JS frameworks/libraries, learning about web
                     development with React, API consumption, databases, and
-                    other skills. I am currently working on a mobile app for
-                    quotes called
+                    other skills. I am currently working on a personal mobile
+                    app for quotes called
                     <strong>
                       <em> WisdomQuill</em>
                     </strong>
@@ -62,22 +64,25 @@ function Projects() {
                         </Row>
                       </Tab.Pane>
                       <Tab.Pane eventKey="second">
-                        <p>
+                        {/* <p>
                           Lorem ipsum dolor sit amet consectetur adipisicing
                           elit. Cumque quam, quod neque provident velit, rem
                           explicabo excepturi id illo molestiae blanditiis,
                           eligendi dicta officiis asperiores delectus quasi
                           inventore debitis quo.
-                        </p>
+                        </p> */}
+                        <Row>
+                          {projects.map((project, index) => {
+                            return <ProjectCard key={index} {...project} />;
+                          })}
+                        </Row>
                       </Tab.Pane>
                       <Tab.Pane eventKey="third">
-                        <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Cumque quam, quod neque provident velit, rem
-                          explicabo excepturi id illo molestiae blanditiis,
-                          eligendi dicta officiis asperiores delectus quasi
-                          inventore debitis quo.
-                        </p>
+                        <Row>
+                          {coursework.map((project, index) => {
+                            return <ProjectCard key={index} {...project} />;
+                          })}
+                        </Row>
                       </Tab.Pane>
                     </Tab.Content>
                   </Tab.Container>

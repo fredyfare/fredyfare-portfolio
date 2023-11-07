@@ -84,7 +84,7 @@
 }
 .cursor {
   display: inline-block;
-  width: 0.2em; /* Ancho del cursor vertical */
-  height: 1em; /* Altura del cursor vertical */
-  animation: blink 1s step-end infinite; /* Animación de parpadeo */
+  width: 0.2em; 
+  height: 1em; 
+  animation: blink 1s step-end infinite; 
 }

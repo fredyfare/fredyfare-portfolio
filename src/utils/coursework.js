@@ -1,38 +1,41 @@
-import marineromxImg from "../assets/images/marineromx-img.png";
-// import projImg2 from "..assets/images/project-img2.png";
-// import projImg3 from "../assets/images/project-img3.png";
+import programmingwithjavascriptImg from "../assets/images/programmingwithjavascript-img.jpg";
+import reactbasicsImg from "../assets/images/reactbasics-img.jpg";
+import versioncontrolImg from "../assets/images/versioncontrol-img.jpg";
+import databasemanagementessentialsImg from "../assets/images/databasemanagementessentials-img.jpg";
+import datastructuresinpythonImg from "../assets/images/datastructuresinpython-img.jpg";
+import { version } from "react";
 
-const professionalExperience = [
+const coursework = [
   {
-    title: "marinero.mx",
-    description: "Mobile Development",
-    imgUrl: marineromxImg,
+    title: "Programming with JavaScript",
+    description: "by Meta",
+    technologies: "Coursera",
+    imgUrl: programmingwithjavascriptImg,
   },
-  // {
-  //   title: "Business Startup",
-  //   description: "Design & Development",
-  //   imgUrl: projImg2,
-  // },
-  // {
-  //   title: "Business Startup",
-  //   description: "Design & Development",
-  //   imgUrl: projImg3,
-  // },
-  // {
-  //   title: "Business Startup",
-  //   description: "Design & Development",
-  //   imgUrl: projImg1,
-  // },
-  // {
-  //   title: "Business Startup",
-  //   description: "Design & Development",
-  //   imgUrl: projImg2,
-  // },
-  // {
-  //   title: "Business Startup",
-  //   description: "Design & Development",
-  //   imgUrl: projImg3,
-  // },
+  {
+    title: "React Basics",
+    description: "by Meta",
+    technologies: "Coursera",
+    imgUrl: reactbasicsImg,
+  },
+  {
+    title: "Version Control",
+    description: "by Meta",
+    technologies: "Coursera",
+    imgUrl: versioncontrolImg,
+  },
+  {
+    title: "Database Management Essentials",
+    description: "by University of Colorado Boulder",
+    technologies: "Coursera",
+    imgUrl: databasemanagementessentialsImg,
+  },
+  {
+    title: "Data Structures in Python",
+    description: "by Universidad Austral, Argentina",
+    technologies: "Coursera",
+    imgUrl: datastructuresinpythonImg,
+  },
 ];
 
-export default professionalExperience;
+export default coursework;

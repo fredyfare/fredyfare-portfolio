@@ -1,38 +1,33 @@
-import marineromxImg from "../assets/images/marineromx-img.png";
-// import projImg2 from "..assets/images/project-img2.png";
-// import projImg3 from "../assets/images/project-img3.png";
+import todolistImg from "../assets/images/todolist-img.png";
+// import clickcounterImg from "../assets/images/clickcounter-img.png";
+import calculatorImg from "../assets/images/calculator-img.png";
+import findajobImg from "../assets/images/findajob-img.png";
 
-const professionalExperience = [
+const projects = [
   {
-    title: "marinero.mx",
-    description: "Mobile Development",
-    imgUrl: marineromxImg,
+    title: "ToDo List",
+    description: "by freeCodeCamp",
+    technologies: "React",
+    imgUrl: todolistImg,
   },
   // {
-  //   title: "Business Startup",
-  //   description: "Design & Development",
-  //   imgUrl: projImg2,
+  //   title: "Click Counter",
+  //   description: "by freeCodeCamp",
+  //   technologies: "React",
+  //   imgUrl: clickcounterImg,
   // },
-  // {
-  //   title: "Business Startup",
-  //   description: "Design & Development",
-  //   imgUrl: projImg3,
-  // },
-  // {
-  //   title: "Business Startup",
-  //   description: "Design & Development",
-  //   imgUrl: projImg1,
-  // },
-  // {
-  //   title: "Business Startup",
-  //   description: "Design & Development",
-  //   imgUrl: projImg2,
-  // },
-  // {
-  //   title: "Business Startup",
-  //   description: "Design & Development",
-  //   imgUrl: projImg3,
-  // },
+  {
+    title: "Calculator",
+    description: "by freeCodeCamp",
+    technologies: "React, mathJS",
+    imgUrl: calculatorImg,
+  },
+  {
+    title: "FindAJob",
+    description: "by JavaScript Mastery",
+    technologies: "React-Native, JSearch API",
+    imgUrl: findajobImg,
+  },
 ];
 
-export default professionalExperience;
+export default projects;

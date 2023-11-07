@@ -6,6 +6,7 @@ const professionalExperience = [
   {
     title: "marinero.mx",
     description: "Mobile Development",
+    technologies: "React-Native",
     imgUrl: marineromxImg,
   },
   // {
