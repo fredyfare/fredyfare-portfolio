@@ -12,7 +12,7 @@ function Banner() {
   const [text, setText] = useState("");
   const [delta, setDelta] = useState(100);
   const [index, setIndex] = useState(1);
-  const toRotate = ["Web Developer", "Web Designer", "UI/UX Designer"];
+  const toRotate = ["Web Developer...", "In Progress", "...And A Gamer"];
   const period = 75;
 
   useEffect(() => {
@@ -41,7 +41,7 @@ function Banner() {
     if (!isDeleting && updatedText === fullText) {
       setIsDeleting(true);
       setIndex((prevIndex) => prevIndex - 1);
-      setDelta(3000);
+      setDelta(2000);
     } else if (isDeleting && updatedText === "") {
       setIsDeleting(false);
       setLoopNum(loopNum + 1);
