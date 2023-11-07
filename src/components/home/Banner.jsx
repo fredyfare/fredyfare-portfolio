@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { ArrowRightCircle } from "react-bootstrap-icons";
 import TrackVisibility from "react-on-screen";
@@ -10,10 +10,10 @@ function Banner() {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const [text, setText] = useState("");
-  const [delta, setDelta] = useState(300 - Math.random() * 100);
+  const [delta, setDelta] = useState(100);
   const [index, setIndex] = useState(1);
   const toRotate = ["Web Developer", "Web Designer", "UI/UX Designer"];
-  const period = 2000;
+  const period = 100;
 
   useEffect(() => {
     let ticker = setInterval(() => {
@@ -35,7 +35,7 @@ function Banner() {
     setText(updatedText);
 
     if (isDeleting) {
-      setDelta((prevDelta) => prevDelta / 2);
+      setDelta(100);
     }
 
     if (!isDeleting && updatedText === fullText) {
@@ -46,7 +46,7 @@ function Banner() {
       setIsDeleting(false);
       setLoopNum(loopNum + 1);
       setIndex(1);
-      setDelta(500);
+      setDelta(200);
     } else {
       setIndex((prevIndex) => prevIndex + 1);
     }
@@ -67,12 +67,11 @@ function Banner() {
                   <span className="tagline">Welcome to my Portfolio</span>
                   <h1>
                     {`Hi! I'm Alfredo`}{" "}
-                    <span
-                      className="txt-rotate"
-                      dataperiod="1000"
-                      data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'
-                    >
-                      <div className="wrap">{text}</div>
+                    <span className="txt-rotate">
+                      <div className="wrap">
+                        {text}
+                        <span className="cursor">|</span>
+                      </div>
                     </span>
                   </h1>
                   <p>
