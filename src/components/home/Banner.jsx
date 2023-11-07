@@ -2,9 +2,9 @@ import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { ArrowRightCircle } from "react-bootstrap-icons";
 import TrackVisibility from "react-on-screen";
-import headerImg from "../assets/images/header-img.svg";
+import headerImg from "../../assets/images/header-img.svg";
 import "animate.css";
-import "../styles/Banner.css";
+import "../../styles/Banner.css";
 
 function Banner() {
   const [loopNum, setLoopNum] = useState(0);
@@ -69,22 +69,22 @@ function Banner() {
                     {`Hi! I'm Alfredo`}{" "}
                     <span
                       className="txt-rotate"
-                      dataPeriod="1000"
+                      dataperiod="1000"
                       data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'
                     >
-                      <span className="wrap">{text}</span>
+                      <div className="wrap">{text}</div>
                     </span>
                   </h1>
                   <p>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an unknown
-                    printer took a galley of type and scrambled it to make a
-                    type specimen book.
+                    Strong interest in full-stack web development, and AI. My
+                    goal is to become part of an organization that will enable
+                    me to further develop my skills in line with my career
+                    goals, providing me with opportunities for growth in the
+                    software development field.
                   </p>
-                  <button onClick={() => console.log("connect")}>
+                  {/* <button onClick={() => console.log("connect")}>
                     Let's Connect <ArrowRightCircle size={25} />
-                  </button>
+                  </button> */}
                 </div>
               )}
             </TrackVisibility>

@@ -1,5 +1,5 @@
 import { Col } from "react-bootstrap";
-import "../styles/ProjectCard.css";
+import "../../styles/ProjectCard.css";
 
 function ProjectCard({ title, description, imgUrl }) {
   return (
