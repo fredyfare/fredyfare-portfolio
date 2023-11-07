@@ -11,11 +11,12 @@ function Newsletter({ status, message, onValidated }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    email &&
-      email.indexOf("@") > -1 &&
-      onValidated({
-        EMAIL: email,
-      });
+    console.log(`Like I said, nothing would happen.`);
+    // email &&
+    //   email.indexOf("@") > -1 &&
+    //   onValidated({
+    //     EMAIL: email,
+    //   });
   };
 
   const clearFields = () => {
@@ -41,7 +42,7 @@ function Newsletter({ status, message, onValidated }) {
                   value={email}
                   type="email"
                   onChange={(e) => setEmail(e.target.value)}
-                  placeholder="Email Address"
+                  placeholder="Email Address (Nothing will happen either)"
                 />
                 <button type="submit">Submit</button>
               </div>

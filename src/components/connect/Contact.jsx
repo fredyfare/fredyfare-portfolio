@@ -122,7 +122,7 @@ function Contact() {
                         <textarea
                           rows="6"
                           value={formDetails.message}
-                          placeholder={`Don't worry, nothing will happen if you press the send button. I don't have the mail service implemented.`}
+                          placeholder={`Message (Don't worry, nothing will happen if you press the send button. I don't have the mail service implemented.)`}
                           onChange={(e) =>
                             onFormUpdate("message", e.target.value)
                           }
