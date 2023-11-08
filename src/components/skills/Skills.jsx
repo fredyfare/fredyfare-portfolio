@@ -36,7 +36,7 @@ function Skills() {
               <p>Languages</p>
               <LanguagesCarousel responsive={responsive} />
               {/* <h2>Frameworks</h2> */}
-              <p>Frameworks/Libraries</p>
+              <p>Frameworks</p>
               <FrameworksCarousel responsive={responsive} />
               {/* <h2>Dev Tools</h2> */}
               <p>Dev Tools</p>
