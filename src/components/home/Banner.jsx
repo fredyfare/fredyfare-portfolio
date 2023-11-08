@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import TrackVisibility from "react-on-screen";
-import headerImg from "../../assets/images/header-img.svg";
+import astronautImg from "../../assets/images/astronaut-img.svg";
+import astronaut2Img from "../../assets/images/astronaut2-img.png";
+import astronaut3Img from "../../assets/images/astronaut3-img.png";
 import "animate.css";
 import "../../styles/Banner.css";
 
@@ -11,6 +13,7 @@ function Banner() {
   const [text, setText] = useState("");
   const [delta, setDelta] = useState(100);
   const [index, setIndex] = useState(1);
+  const [selectedImage, setSelectedImage] = useState("");
   const toRotate = ["Web Developer...", "...In Progress", "And A Gamer"];
   const period = 200;
 
@@ -23,6 +26,12 @@ function Banner() {
       clearInterval(ticker);
     };
   }, [text]);
+
+  useEffect(() => {
+    const images = [astronautImg, astronaut2Img, astronaut3Img];
+    const randomIndex = Math.floor(Math.random() * images.length);
+    setSelectedImage(images[randomIndex]);
+  }, []);
 
   const tick = () => {
     let i = loopNum % toRotate.length;
@@ -69,7 +78,9 @@ function Banner() {
                     <span className="txt-rotate">
                       <div className="wrap">
                         {text}
-                        <span className={isDeleting ? "cursor" : "cursor"} >|</span>
+                        <span className={isDeleting ? "cursor" : "cursor"}>
+                          |
+                        </span>
                       </div>
                     </span>
                   </h1>
@@ -92,7 +103,7 @@ function Banner() {
                     isVisible ? "animate__animated animate__zoomIn" : ""
                   }
                 >
-                  <img src={headerImg} alt="Header Img" />
+                  <img src={selectedImage} alt="Astronaut Img" />
                 </div>
               )}
             </TrackVisibility>
