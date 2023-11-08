@@ -88,7 +88,7 @@ function Banner() {
                     Strong interest in full-stack web development, and AI. My
                     goal is to become part of an organization that will enable
                     me to further develop my skills in line with my career
-                    goals, providing me with opportunities for growth in the
+                    goals, providing opportunities for growth in the
                     software development field.
                   </p>
                 </div>
