@@ -1,9 +1,9 @@
 <div align="center">
-  <img src="/README_FILES/vercelDeployment.png" alt="Vercel Deployment">
+  <img src="/IMAGES/vercelDeployment.png" alt="Vercel Deployment">
 </div>
 
-# React portfolio project <img src="/README_FILES/React-Dark.svg" width=30 alt="React Icon">
-This **portfolio** was made following the [React Portfolio Tutorial](https://www.youtube.com/watch?v=hYv6BM2fWd8&t=1784s) by [webdecoded](https://github.com/judygab) and deployed on Vercel <img src="/README_FILES/Vercel-Dark.svg" width=16 alt="Vercel Icon">. Go take a look of it: <a href="https://fredyfare-portfolio.vercel.app/">AlfredoFabila's Portfolio</a> <img src="/public/favicon.ico" width=16 alt="Panda Icon">.
+# React portfolio project <img src="/IMAGES/React-Dark.svg" width=30 alt="React Icon">
+This **portfolio** was made following the [React Portfolio Tutorial](https://www.youtube.com/watch?v=hYv6BM2fWd8&t=1784s) by [webdecoded](https://github.com/judygab) and deployed on Vercel <img src="/IMAGES/Vercel-Dark.svg" width=16 alt="Vercel Icon">. Go take a look of it: <a href="https://fredyfare-portfolio.vercel.app/">AlfredoFabila's Portfolio</a> <img src="/public/favicon.ico" width=16 alt="Panda Icon">.
 
 ## Project structure I used
 
@@ -21,7 +21,7 @@ This **portfolio** was made following the [React Portfolio Tutorial](https://www
 │  └── const.js
 ```
 
-Icons used in this project were taken from [Skill Icons](https://github.com/tandpfun/skill-icons/tree/main) GitHub repository <img src="/README_FILES/Github-Dark.svg" width=16 alt="GitHub Icon">.
+Icons used in this project were taken from [Skill Icons](https://github.com/tandpfun/skill-icons/tree/main) GitHub repository <img src="/IMAGES/Github-Dark.svg" width=16 alt="GitHub Icon">.
 
 ## How to run the project
 
