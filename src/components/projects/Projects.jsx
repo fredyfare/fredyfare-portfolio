@@ -3,7 +3,7 @@ import TrackVisibility from "react-on-screen";
 import ProjectCard from "./ProjectCard";
 import professionalExperience from "../../utils/professionalExperience";
 import projects from "../../utils/projects";
-import coursework from "../../utils/coursework";
+import tutorialProjects from "../../utils/tutorialProjects";
 import colorSharp2 from "../../assets/images/color-sharp2.png";
 import "animate.css";
 import "../../styles/Projects.css";
@@ -21,8 +21,8 @@ function Projects() {
                     isVisible ? "animate__animated animate__fadeIn" : ""
                   }
                 >
-                  <h2>Projects</h2>
-                  <p>
+                  <h2 style={{ paddingBottom: 20 }}>Projects</h2>
+                  {/* <p>
                     I've worked with JS frameworks/libraries, learning about web
                     development with React, API consumption, databases, and
                     other skills. I am currently working on a personal mobile
@@ -31,7 +31,7 @@ function Projects() {
                       <em> WisdomQuill</em>
                     </strong>
                     .
-                  </p>
+                  </p> */}
                   <Tab.Container id="projects-tabs" defaultActiveKey="first">
                     <Nav
                       variant="pills"
@@ -47,7 +47,7 @@ function Projects() {
                         <Nav.Link eventKey="second">Projects</Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
-                        <Nav.Link eventKey="third">Coursework</Nav.Link>
+                        <Nav.Link eventKey="third">Tutorial Projects</Nav.Link>
                       </Nav.Item>
                     </Nav>
                     <Tab.Content
@@ -65,11 +65,13 @@ function Projects() {
                       </Tab.Pane>
                       <Tab.Pane eventKey="second">
                         {/* <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Cumque quam, quod neque provident velit, rem
-                          explicabo excepturi id illo molestiae blanditiis,
-                          eligendi dicta officiis asperiores delectus quasi
-                          inventore debitis quo.
+                          All the projects I've completed by myself, usually
+                          related to things I like such as videogames, reading,
+                          and music. More details available in each project's
+                          GitHub repository.
+                          <br />
+                          <br />
+                          "Even if you are good, you can always be better"
                         </p> */}
                         <Row>
                           {projects.map((project, index) => {
@@ -78,8 +80,17 @@ function Projects() {
                         </Row>
                       </Tab.Pane>
                       <Tab.Pane eventKey="third">
+                        <p>
+                          All the projects I've completed by following
+                          tutorials. More details in each project's GitHub
+                          repository. Improving my skills by modifying the
+                          design and adding features.
+                          <br />
+                          <br />
+                          "Learning by doing"
+                        </p>
                         <Row>
-                          {coursework.map((project, index) => {
+                          {tutorialProjects.map((project, index) => {
                             return <ProjectCard key={index} {...project} />;
                           })}
                         </Row>
