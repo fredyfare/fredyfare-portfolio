@@ -22,7 +22,7 @@ const projects = [
     description: "by JavaScript Mastery",
     technologies: "React-Native, JSearch API",
     imgUrl: findajobImg,
-    repUrl: "https://github.com/fredyfare/findajob",
+    // repUrl: "https://github.com/fredyfare/findajob",
   },
 ];
 
