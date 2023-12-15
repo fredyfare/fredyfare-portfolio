@@ -1,11 +1,11 @@
-import marineromxImg from "../assets/images/marineromx-img.png";
+import marineromx from "../assets/images/marineromx.png";
 
 const professionalExperience = [
   {
     title: "marinero.mx",
     description: "Mobile Development",
     technologies: "React-Native",
-    imgUrl: marineromxImg,
+    imgUrl: marineromx,
   },
 ];
 

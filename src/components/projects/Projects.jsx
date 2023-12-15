@@ -2,7 +2,7 @@ import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import TrackVisibility from "react-on-screen";
 import ProjectCard from "./ProjectCard";
 import professionalExperience from "../../utils/professionalExperience";
-import projects from "../../utils/projects";
+import personalProjects from "../../utils/personalProjects";
 import tutorialProjects from "../../utils/tutorialProjects";
 import colorSharp2 from "../../assets/images/color-sharp2.png";
 import "animate.css";
@@ -44,7 +44,7 @@ function Projects() {
                         </Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
-                        <Nav.Link eventKey="second">Projects</Nav.Link>
+                        <Nav.Link eventKey="second">Personal Projects</Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
                         <Nav.Link eventKey="third">Tutorial Projects</Nav.Link>
@@ -64,7 +64,7 @@ function Projects() {
                         </Row>
                       </Tab.Pane>
                       <Tab.Pane eventKey="second">
-                        {/* <p>
+                        <p>
                           All the projects I've completed by myself, usually
                           related to things I like such as videogames, reading,
                           and music. More details available in each project's
@@ -72,9 +72,9 @@ function Projects() {
                           <br />
                           <br />
                           "Even if you are good, you can always be better"
-                        </p> */}
+                        </p>
                         <Row>
-                          {projects.map((project, index) => {
+                          {personalProjects.map((project, index) => {
                             return <ProjectCard key={index} {...project} />;
                           })}
                         </Row>

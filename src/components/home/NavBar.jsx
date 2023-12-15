@@ -73,10 +73,13 @@ function NavBar() {
             </Nav>
             <span className="navbar-text">
               <div className="social-icon">
-                <a href="https://www.linkedin.com/in/alfredo-fabila-482b51267">
+                <a
+                  href="https://www.linkedin.com/in/alfredo-fabila-482b51267"
+                  target="_blank"
+                >
                   <img src={linkedIn} alt="LinkedIn Icon" />
                 </a>
-                <a href="https://github.com/fredyfare">
+                <a href="https://github.com/fredyfare" target="_blank">
                   <img src={githubIcon} alt="GitHub Icon" />
                 </a>
               </div>
