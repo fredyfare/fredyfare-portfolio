@@ -13,7 +13,7 @@ function ProjectCard({ title, description, technologies, imgUrl, repUrl }) {
           <div style={{ padding: 20 }}>{technologies}</div>
           {repUrl && (
             <div className="social-icon">
-              <a href={repUrl}>
+              <a href={repUrl} target="_blank">
                 <img
                   src={githubIcon}
                   alt="GitHub Icon"
